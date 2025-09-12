@@ -6,5 +6,7 @@ import java.util.List;
 
 public interface UserRepository {
 
-    List<UserDto> getAllUsersWithScoreHigherThan(Integer score);
+    List<UserDto> getAllUsers();
+
+    List<UserDto> getAllUsersWithScoreHigherThan(Integer score, Boolean active);
 }
